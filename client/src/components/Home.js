@@ -5,6 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import HomeCard from "./HomeCard";
 // import logoPic from ".../images/logo.jpg";1234
 import HomeCardGrid from "./HomeCardGrid";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
+
 const printSizes = () => {
   const body = document.body,
     html = document.documentElement;
@@ -77,8 +80,7 @@ export default function Home({ content }) {
 
   return (
     <div>
-      <button onClick={printSizes()}>sizes</button>
-      <div className={classes.square}>
+      <div id="top" className={classes.square}>
         <div className={classes.title}></div>
       </div>
 
@@ -90,6 +92,7 @@ export default function Home({ content }) {
         }}
       >
         <div
+          id="about"
           style={{
             backgroundPosition: "center",
             backgroundImage: `url("/images/about.jpg")`,
@@ -126,6 +129,8 @@ export default function Home({ content }) {
         <HomeCard isPic="true" value={logoPic}></HomeCard>
         <HomeCard isPic="true" value={logoPic}></HomeCard> */}
       </HomeCardGrid>
+      <Gallery></Gallery>
+      <Contact></Contact>
       <div
         id="secondMoving"
         style={{

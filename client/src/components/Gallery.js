@@ -26,7 +26,11 @@ export default function () {
 
   return (
     <div>
-      <img src="/images/gallery.jpg" className={classes.title}></img>
+      <img
+        id="gallery"
+        src="/images/gallery.jpg"
+        className={classes.title}
+      ></img>
       <div className={classes.parag}>
         <GalleryGrid />
       </div>

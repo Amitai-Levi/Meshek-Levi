@@ -85,11 +85,11 @@ export default function Header(currentPage = 0) {
           }}
           centered
         >
-          <Tab label="דף הבית" {...a11yProps(0)} href="/"></Tab>
-          <Tab label="גלריה" {...a11yProps(1)} href="/Gallery" />
-          <Tab label="אודותינו" href="/AboutUs" {...a11yProps(2)} />
-          <Tab label="צור קשר" {...a11yProps(3)} href="/Contact" />
-          <Tab className={classes.logo} href="/" />
+          <Tab label="דף הבית" {...a11yProps(0)} href="#top"></Tab>
+          <Tab label="גלריה" {...a11yProps(1)} href="#gallery" />
+          <Tab label="אודותינו" href="#about" {...a11yProps(2)} />
+          <Tab label="צור קשר" {...a11yProps(3)} href="#contact" />
+          <Tab className={classes.logo} href="#top" style={{ opacity: 1 }} />
         </Tabs>
       </AppBar>
     </div>

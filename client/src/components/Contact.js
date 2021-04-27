@@ -28,7 +28,11 @@ export default function Contact() {
 
   return (
     <div>
-      <img src="/images/contact.jpg" className={classes.title}></img>
+      <img
+        id="contact"
+        src="/images/contact.jpg"
+        className={classes.title}
+      ></img>
       <iframe
         style={{ border: 0, width: "600", height: "450" }}
         loading="lazy"
