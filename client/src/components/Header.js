@@ -71,6 +71,11 @@ export default function Header(currentPage = 0) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const sectionFinder = (id) => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
@@ -86,8 +91,8 @@ export default function Header(currentPage = 0) {
           centered
         >
           <Tab label="דף הבית" {...a11yProps(0)} href="#top"></Tab>
+          <Tab label="?מי אנחנו" href="#about" {...a11yProps(2)} />
           <Tab label="גלריה" {...a11yProps(1)} href="#gallery" />
-          <Tab label="אודותינו" href="#about" {...a11yProps(2)} />
           <Tab label="צור קשר" {...a11yProps(3)} href="#contact" />
           <Tab className={classes.logo} href="#top" style={{ opacity: 1 }} />
         </Tabs>

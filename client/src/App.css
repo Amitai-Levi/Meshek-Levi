@@ -1,8 +1,24 @@
 body {
   margin: 0;
   background-color: steelblue;
+  font-family: yehuda;
 }
 h1 {
 }
 p {
+  font-size: larger;
+}
+html {
+  scroll-behavior: smooth;
+}
+.movingObject {
+  transition: margin 5s ease-in-out;
+}
+@font-face {
+  font-family: "yehuda";
+  src: local("yehuda"),
+    url(./fonts/yehuda/yehudaclm-bold-webfont.woff) format("truetype");
+}
+input {
+  margin-bottom: 20px;
 }
