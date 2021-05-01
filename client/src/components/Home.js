@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: -window.innerWidth,
   },
   movingObject2: {
-    marginLeft: window.innerWidth * 2,
+    marginLeft: window.innerWidth,
   },
 }));
 export default function Home({ content }) {
@@ -78,7 +78,7 @@ export default function Home({ content }) {
         secondFirstTime = false;
       } else if (firstTime) {
         const first = document.getElementById("firstMoving");
-        first.style.transition = "margin 5s ease-in-out";
+        first.style.transition = "margin 2s ease-in-out";
         first.style.marginLeft = "0px";
         firstTime = false;
       }

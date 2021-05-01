@@ -48,10 +48,8 @@ export default function Contact() {
             allowFullScreen
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkb_kaq27AhUR7vor3Hq8-Fw&key=AIzaSyBFquHjHhVVcR7U0KblL3b7h7FmtKuCMEo"
           ></iframe>
-          <p>
-            "לניווט עם וויז לחצו על האייקון או כתבו בשורת הניווט "משק לוי בית
-            גמליאל
-          </p>
+          <p>לניווט עם וויז לחצו על האייקון או כתבו בשורת הניווט </p>
+          <p>"משק לוי בית גמליאל"</p>
           <a href="https://waze.com/ul/hsv8tqbvpe">
             <img src="/images/waze.png" alt="waze" className={classes.ico} />
           </a>
