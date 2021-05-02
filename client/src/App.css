@@ -2,8 +2,13 @@ body {
   margin: 0;
   background-color: steelblue;
   font-family: yehuda;
+  overflow-x: hidden;
 }
-h1 {
+a {
+  font-size: x-large;
+  font-style: normal;
+  color: antiquewhite;
+  text-decoration: none;
 }
 p {
   font-size: larger;

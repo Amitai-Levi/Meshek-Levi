@@ -50,6 +50,10 @@ function App() {
           </Route>
 
           <Route path="/Gallery">
+            <a href="/#gallery" style={{ marginTop: "80px", float: "right" }}>
+              חזרה
+            </a>
+
             <Gallery />
           </Route>
           <Route path="/AboutUs">

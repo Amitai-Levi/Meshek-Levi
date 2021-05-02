@@ -40,7 +40,7 @@ export default function Contact() {
         className={classes.title}
       ></img>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
-        <div style={{ textAlign: "center", backgroundColor: "orange" }}>
+        <div style={{ textAlign: "center" }}>
           <p>:איפה אנחנו נמצאים</p>
           <iframe
             style={{ border: 0, width: "600", height: "450" }}
@@ -58,7 +58,6 @@ export default function Contact() {
           style={{
             // display: "grid",
             // gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            backgroundColor: "red",
             alignItems: "center",
             textAlign: "center",
             justifyContent: "center",
@@ -72,21 +71,21 @@ export default function Contact() {
               className={classes.ico}
             />
           </a>
-          <a href="tel:0528477506">
+          <a href="https://www.facebook.com/Levisfarm/">
             <img
               src="/images/facebook.png"
-              alt="call"
+              alt="facebook"
               className={classes.ico}
             />
           </a>
-          <a href="tel:0528477506">
+          <a href="https://instagram.com/the_levis_farm?igshid=u2manjz4mx3l">
             <img
               src="/images/instagram.jpg"
-              alt="call"
+              alt="instagram"
               className={classes.ico}
             />
           </a>
-          <a href="tel:0528477506">
+          <a href="//wa.me/0528477506">
             <img
               src="/images/whatsapp.png"
               alt="call"
@@ -96,7 +95,6 @@ export default function Contact() {
         </div>
         <div
           style={{
-            backgroundColor: "purple",
             // display: "flex",
             alignItems: "center",
             textAlign: "center",

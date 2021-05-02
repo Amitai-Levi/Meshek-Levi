@@ -8,23 +8,9 @@ import HomeCard from "./HomeCard";
 // import logoPic from ".../images/logo.jpg";1234
 import HomeCardGrid from "./HomeCardGrid";
 import Gallery from "./Gallery";
+import MiniGallery from "./MiniGallery";
 import Contact from "./Contact";
 
-const printSizes = () => {
-  const body = document.body,
-    html = document.documentElement;
-
-  console.log("body.scrollHeight =" + body.scrollHeight);
-  console.log("body.offsetHeight =" + body.offsetHeight);
-  console.log("body.clientHeight =" + body.clientHeight);
-  console.log("html.scrollHeight =" + html.scrollHeight);
-  console.log("html.offsetHeight =" + html.offsetHeight);
-  console.log(
-    "document.documentElement.scrollHeight =" +
-      document.documentElement.scrollHeight
-  );
-  console.log("window.pageYOffset =" + window.pageYOffset);
-};
 const useStyles = makeStyles((theme) => ({
   square: {
     display: "flex",
@@ -139,7 +125,9 @@ export default function Home({ content }) {
         <HomeCard isPic="true" value={logoPic}></HomeCard>
       <HomeCard isPic="true" value={logoPic}></HomeCard> */}
       </HomeCardGrid>
-      <Gallery></Gallery>
+      <MiniGallery id="miniGallery"></MiniGallery>
+      <a href="/Gallery">לעוד תמונות ואלבומים</a>
+
       <Contact></Contact>
       <div
         className={classes.movingObject2}
